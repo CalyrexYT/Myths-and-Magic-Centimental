@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "skillset-centimental:item/charged_prison_of_souls"
+    }
+}

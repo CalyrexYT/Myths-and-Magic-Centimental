@@ -1,0 +1,17 @@
+{
+    "overrides": [
+        {
+            "predicate": {
+                "charged": 0
+            },
+            "model": "skillset-centimental:item/uncharged_prison_of_souls"
+        },
+        {
+            "predicate": {
+                "charged": 1
+            },
+            "model": "skillset-centimental:item/charged_prison_of_souls"
+        }
+        
+    ]
+}
