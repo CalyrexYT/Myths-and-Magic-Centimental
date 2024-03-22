@@ -26,7 +26,11 @@ public class LivingEntityMixin {
                 CommandManager commandManager = player.getServer().getCommandManager();
                 NbtCompound nbt = stack.getOrCreateNbt();
                 int chance = Random.create().nextBetween(1, 100);
-                if (chance <= 50) {
+                long exponential = Math.round(100*(Math.pow(0.9,nbt.getInt("damage"))));
+                if (exponential==0){
+                    exponential++;
+                }
+                if (chance <= exponential) {
                     nbt.putInt("damage", nbt.getInt("damage")+1);
                     commandManager.executeWithPrefix(player.getServer().getCommandSource(), "/item replace entity @p weapon.mainhand with skillset-centimental:prison_of_souls{damage:"+nbt.getInt("damage")+",Enchantments:[{id:sharpness,lvl: "+(nbt.getInt("damage"))+"}]}");}
             }
