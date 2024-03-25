@@ -1,7 +1,5 @@
 package in.techpro424.skillset_centimental.mixin;
 
-import in.techpro424.skillset_centimental.KillCount;
-import in.techpro424.skillset_centimental.SkillsetCentimental;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.command.CommandManager;
 import org.jetbrains.annotations.Nullable;
@@ -26,15 +24,16 @@ public class LivingEntityMixin {
                 CommandManager commandManager = player.getServer().getCommandManager();
                 NbtCompound nbt = stack.getOrCreateNbt();
                 int chance = Random.create().nextBetween(1, 100);
-                long exponential = Math.round(100*(Math.pow(0.9,nbt.getInt("damage"))));
-                if (exponential==0){
+                long exponential = Math.round(100 * (Math.pow(0.84, nbt.getInt("damage"))));
+                if (exponential == 0) {
                     exponential++;
                 }
                 if (chance <= exponential) {
-                    nbt.putInt("damage", nbt.getInt("damage")+1);
-                    commandManager.executeWithPrefix(player.getServer().getCommandSource(), "/item replace entity @p weapon.mainhand with skillset-centimental:prison_of_souls{damage:"+nbt.getInt("damage")+",Enchantments:[{id:sharpness,lvl: "+(nbt.getInt("damage"))+"}]}");}
+                    nbt.putInt("damage", nbt.getInt("damage") + 1);
+                    commandManager.executeWithPrefix(player.getServer().getCommandSource(), "/item replace entity @p weapon.mainhand with skillset-centimental:prison_of_souls{damage:" + nbt.getInt("damage") + ",Enchantments:[{id:sharpness,lvl: " + (nbt.getInt("damage")) + "}]}");
+                    commandManager.executeWithPrefix(player.getServer().getCommandSource(), "/particle enchanted_hit " + player.getX() + " " + player.getY() + " " + player.getZ() + " 1 1 1 4 1000 normal");
+                    }
             }
-            
         }
     }
 }
