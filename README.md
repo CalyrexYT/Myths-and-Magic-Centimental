@@ -27,3 +27,8 @@ Downloading this file, and running it in an IDE should create a full editible so
 - Endgame item
 - 20% chance to create a black hole on hit: black hole sucks in entities in a 15 blocks radius, if in contact with the black hole, deals poison 3 level dmg
 - Can create up to one pairs of portals, allow for fast travel, portals disappear when player enters and exists
+
+## Change LOG
+0.1.1
+-  Nerfed Prison of souls sharpness increment
+-  Nerfed Mjolnir explosion size
