@@ -39,7 +39,7 @@ public class MjolnirEntity extends TridentEntity {
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
         Vec3d pos = entityHitResult.getPos();
-        this.getWorld().createExplosion(this, pos.getX(), pos.getY(), pos.getZ(), 7, ExplosionSourceType.MOB);
+        this.getWorld().createExplosion(this, pos.getX(), pos.getY(), pos.getZ(), 5, ExplosionSourceType.MOB);
         BlockPos blockPos = entityHitResult.getEntity().getBlockPos();
         if(this.getWorld().isSkyVisible(blockPos)) {
             LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(this.getWorld());
