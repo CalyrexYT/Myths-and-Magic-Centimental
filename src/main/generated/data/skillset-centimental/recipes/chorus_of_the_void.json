@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:end_crystal"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "R": {
+      "item": "minecraft:end_rod"
+    }
+  },
+  "pattern": [
+    "OCO",
+    "OCO",
+    " R "
+  ],
+  "result": {
+    "item": "skillset-centimental:chorus_of_the_void"
+  }
+}

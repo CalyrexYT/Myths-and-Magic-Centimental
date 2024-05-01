@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "skillset-centimental",
 	"version": "${version}",
-	"name": "Weapons Mod",
+	"name": "Skillset Centimental",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"in.techpro424.skillset_centimental.SkillsetCentimental"
+			"in.kairoku.skillset_centimental.SkillsetCentimental"
 		],
 		"client": [
-			"in.techpro424.skillset_centimental.SkillsetCentimentalClient"
+			"in.kairoku.skillset_centimental.SkillsetCentimentalClient"
 		],
 		"fabric-datagen": [
-			"in.techpro424.skillset_centimental.SkillsetCentimentalDataGenerator"
+			"in.kairoku.skillset_centimental.datagen.SkillsetCentimentalDataGenerator"
 		]
 	},
 	"mixins": [

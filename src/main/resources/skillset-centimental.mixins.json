@@ -1,20 +1,19 @@
 {
 	"required": true,
-	"package": "in.techpro424.skillset_centimental.mixin",
+	"package": "in.kairoku.skillset_centimental.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"LivingEntityMixin",
-		"EnchantmentHelperMixin",
 		"EnchantmentMixin",
 		"EnderDragonFightMixin",
 		"EntityMixin",
 		"TridentEntityAccessor",
 		"ExplosionBehaviorMixin",
 		"AbstractFurnaceBlockEntityMixin"
-
+		
 	],
 	"server": [
-
+		
 	],
 	"injectors": {
 		"defaultRequire": 1

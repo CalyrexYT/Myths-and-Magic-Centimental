@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "skillset-centimental:chorus_ore"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "C C",
+    "   "
+  ],
+  "result": {
+    "item": "skillset-centimental:chorus_helmet"
+  }
+}
