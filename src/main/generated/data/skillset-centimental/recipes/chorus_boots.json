@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "C": {
-      "item": "skillset-centimental:chorus_ore"
+      "item": "skillset-centimental:chorus_ingot"
     }
   },
   "pattern": [
@@ -12,6 +12,7 @@
     "   "
   ],
   "result": {
-    "item": "skillset-centimental:chorus_boots"
+    "count": 1,
+    "id": "skillset-centimental:chorus_boots"
   }
 }

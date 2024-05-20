@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:skillset-centimental/got_chorus_of_the_void",
+  "criteria": {
+    "got_mjolnir": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:mjolnir"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Basking in the presence of the mythical Mjolnir",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:mjolnir"
+    },
+    "title": "By the will of the gods, i'm alive! I'm invincible! I'm, THOR!!"
+  },
+  "requirements": [
+    [
+      "got_mjolnir"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_prison_of_souls": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:blade_of_dimensions"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Acquired the prison of souls",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:prison_of_souls"
+    },
+    "title": "So am I the warden now?"
+  },
+  "requirements": [
+    [
+      "got_prison_of_souls"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iron_block": {
+    "has_chorus_lump": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_block"
+            "items": "skillset-centimental:chorus_lump"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
+    "has_infused_chorus_fruit": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stick"
+            "items": "skillset-centimental:infused_chorus_fruit"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:thanotasian_scythe"
+        "recipe": "minecraft:chorus_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_iron_block",
-      "has_stick"
+      "has_infused_chorus_fruit",
+      "has_chorus_lump"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:thanotasian_scythe"
+      "minecraft:chorus_ingot"
     ]
   }
 }

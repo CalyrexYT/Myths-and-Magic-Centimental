@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_chorus_lump": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_lump"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Obtained chorus lump",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:chorus_lump"
+    },
+    "title": "End Resonance - Unearthed"
+  },
+  "requirements": [
+    [
+      "got_chorus_lump"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

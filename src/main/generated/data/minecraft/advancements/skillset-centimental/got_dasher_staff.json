@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_dasher_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:dasher_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "obtained the dasher staff",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:dasher_staff"
+    },
+    "title": "Evasive Manoeuvres!"
+  },
+  "requirements": [
+    [
+      "got_dasher_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_end_crystal": {
+    "has_chorus_ingot": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:end_crystal"
-            ]
+            "items": "skillset-centimental:chorus_ingot"
           }
         ]
       },
@@ -17,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:end_rod"
-            ]
+            "items": "minecraft:end_rod"
           }
         ]
       },
@@ -29,9 +25,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:obsidian"
-            ]
+            "items": "minecraft:obsidian"
           }
         ]
       },
@@ -48,7 +42,7 @@
     [
       "has_the_recipe",
       "has_obsidian",
-      "has_end_crystal",
+      "has_chorus_ingot",
       "has_end_rod"
     ]
   ],

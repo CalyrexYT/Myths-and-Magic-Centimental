@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:skillset-centimental/got_prison_of_souls",
+  "criteria": {
+    "got_blade_of_dimension": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:blade_of_dimensions"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Acquired the blade of dimensions",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:blade_of_dimensions"
+    },
+    "title": "This feels.....multidimensional"
+  },
+  "requirements": [
+    [
+      "got_blade_of_dimension"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

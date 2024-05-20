@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:skillset-centimental/got_blade_of_dimension",
+  "criteria": {
+    "got_scythe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:thanotasian_scythe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Collected the scythe of darkness",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:thanotasian_scythe"
+    },
+    "title": "\"Bloody Hell!\""
+  },
+  "requirements": [
+    [
+      "got_scythe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

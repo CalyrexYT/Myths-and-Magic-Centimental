@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_cryomancer_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:cryomancer_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "obtained the cryomancer staff",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:cryomancer_staff"
+    },
+    "title": "Subzero!"
+  },
+  "requirements": [
+    [
+      "got_cryomancer_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

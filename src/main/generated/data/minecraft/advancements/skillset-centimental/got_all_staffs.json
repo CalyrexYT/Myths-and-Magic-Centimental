@@ -1,0 +1,109 @@
+{
+  "parent": "minecraft:skillset-centimental/got_dasher_staff",
+  "criteria": {
+    "got_barbarian_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:barbarian_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_barrier_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:barrier_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_burrower_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:burrower_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_cryomancer_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:cryomancer_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_dasher_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:dasher_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_infernal_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:infernal_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_thunderer_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:thunderer_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Collected all mod staffs",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:dasher_staff"
+    },
+    "title": "THE collector - staffs and magic"
+  },
+  "requirements": [
+    [
+      "got_barrier_staff"
+    ],
+    [
+      "got_cryomancer_staff"
+    ],
+    [
+      "got_burrower_staff"
+    ],
+    [
+      "got_thunderer_staff"
+    ],
+    [
+      "got_infernal_staff"
+    ],
+    [
+      "got_barbarian_staff"
+    ],
+    [
+      "got_dasher_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

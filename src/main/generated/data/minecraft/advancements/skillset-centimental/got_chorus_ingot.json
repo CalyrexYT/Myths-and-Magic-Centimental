@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:skillset-centimental/got_infused_chorus",
+  "criteria": {
+    "got_chorus_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Crafted a chorus ingot",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:chorus_ingot"
+    },
+    "title": "End Resonance - Fused"
+  },
+  "requirements": [
+    [
+      "got_chorus_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

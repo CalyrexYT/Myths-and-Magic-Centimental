@@ -1,0 +1,69 @@
+{
+  "parent": "minecraft:skillset-centimental/got_chorus_ingot",
+  "criteria": {
+    "got_chorus_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_chorus_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_chorus_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_chorus_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Collected the full set of chorus armor",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:chorus_chestplate"
+    },
+    "title": "End Resonance - Done and dusted"
+  },
+  "requirements": [
+    [
+      "got_chorus_helmet"
+    ],
+    [
+      "got_chorus_chestplate"
+    ],
+    [
+      "got_chorus_leggings"
+    ],
+    [
+      "got_chorus_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

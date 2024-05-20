@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_barbarian_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:barbarian_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "obtained the barbarian staff",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:barbarian_staff"
+    },
+    "title": "Rage Mode!"
+  },
+  "requirements": [
+    [
+      "got_barbarian_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

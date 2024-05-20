@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_infused_chorus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:infused_chorus_fruit"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Created an infused chorus fruit",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:infused_chorus_fruit"
+    },
+    "title": "End Resonance - Infused"
+  },
+  "requirements": [
+    [
+      "got_infused_chorus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

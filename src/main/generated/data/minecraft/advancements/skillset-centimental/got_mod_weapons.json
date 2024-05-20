@@ -1,0 +1,83 @@
+{
+  "parent": "minecraft:skillset-centimental/got_mjolnir",
+  "criteria": {
+    "got_blade_of_dimension": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:blade_of_dimensions"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_chorus_of_the_void": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:chorus_of_the_void"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_mjolnir": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:mjolnir"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_prison_of_souls": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:prison_of_souls"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_scythe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:thanotasian_scythe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Collected all mod weapons",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:mjolnir"
+    },
+    "title": "THE collector - myths"
+  },
+  "requirements": [
+    [
+      "got_mjolnir"
+    ],
+    [
+      "got_scythe"
+    ],
+    [
+      "got_blade_of_dimension"
+    ],
+    [
+      "got_prison_of_souls"
+    ],
+    [
+      "got_chorus_of_the_void"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

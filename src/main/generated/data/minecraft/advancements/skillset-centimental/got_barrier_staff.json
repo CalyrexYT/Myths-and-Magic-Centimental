@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_barrier_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:barrier_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "obtained the barrier staff",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:barrier_staff"
+    },
+    "title": "Emerge from the darkness, blacker than darkness. Purify that which is impure."
+  },
+  "requirements": [
+    [
+      "got_barrier_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_burrower_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:burrower_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "obtained the burrower staff",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:burrower_staff"
+    },
+    "title": "Tunnelling Mastery!"
+  },
+  "requirements": [
+    [
+      "got_burrower_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

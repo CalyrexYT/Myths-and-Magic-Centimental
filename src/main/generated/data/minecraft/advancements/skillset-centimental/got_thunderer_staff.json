@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_thunderer_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "skillset-centimental:thunderer_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "obtained the thunderer staff",
+    "icon": {
+      "count": 1,
+      "id": "skillset-centimental:thunderer_staff"
+    },
+    "title": "Thunderclap!"
+  },
+  "requirements": [
+    [
+      "got_thunderer_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

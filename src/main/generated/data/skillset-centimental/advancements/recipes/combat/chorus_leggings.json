@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chorus_ore": {
+    "has_chorus_ingot": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "skillset-centimental:chorus_ore"
-            ]
+            "items": "skillset-centimental:chorus_ingot"
           }
         ]
       },
@@ -23,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_chorus_ore"
+      "has_chorus_ingot"
     ]
   ],
   "rewards": {

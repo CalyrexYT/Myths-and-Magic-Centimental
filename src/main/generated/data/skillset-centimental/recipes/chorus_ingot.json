@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "skillset-centimental:infused_chorus_fruit"
+    },
+    {
+      "item": "skillset-centimental:infused_chorus_fruit"
+    },
+    {
+      "item": "skillset-centimental:infused_chorus_fruit"
+    },
+    {
+      "item": "skillset-centimental:infused_chorus_fruit"
+    },
+    {
+      "item": "skillset-centimental:chorus_lump"
+    },
+    {
+      "item": "skillset-centimental:chorus_lump"
+    },
+    {
+      "item": "skillset-centimental:chorus_lump"
+    },
+    {
+      "item": "skillset-centimental:chorus_lump"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "skillset-centimental:chorus_ingot"
+  }
+}
