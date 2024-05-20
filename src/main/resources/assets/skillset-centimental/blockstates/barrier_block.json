@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "skillset-centimental:block/barrier_block" }
+  }
+}

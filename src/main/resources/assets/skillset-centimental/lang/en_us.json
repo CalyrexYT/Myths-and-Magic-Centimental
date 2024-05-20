@@ -1,12 +1,50 @@
 {
     "item.skillset-centimental.prison_of_souls": "Prison Of Souls",
-    "item.skillset-centimental.mjolnir": "Mjolnir",
-    "item.skillset-centimental.chorus_of_the_void": "Chorus of the Void",
-    "item.skillset-centimental.chorus_ore": "Chorus Ore",
-    "item.skillset-centimental.blade_of_dimensions": "Blade of Dimensions",
-    "item.skillset-centimental.thanotasian_scythe": "Thanotasian Scythe",
+    "item.skillset-centimental.mjolnir": "§4Mjolnir",
+    "item.skillset-centimental.chorus_of_the_void": "§4Chorus of the Void",
+    "item.skillset-centimental.blade_of_dimensions": "§6Blade of Dimensions",
+    "item.skillset-centimental.thanotasian_scythe": "§6Thanotasian Scythe",
+    "item.skillset-centimental.dragonbone_blade": "§4Dragonbone Blade",
+    "item.skillset-centimental.barrier_staff": "§4Barrier Staff",
+    "item.skillset-centimental.dasher_staff": "Dasher Staff",
+    "item.skillset-centimental.thunderer_staff": "Thunderer Staff",
+    "item.skillset-centimental.infernal_staff": "Infernal Staff",
+    "item.skillset-centimental.cryomancer_staff": "Cryomancer Staff",
+    "item.skillset-centimental.barbarian_staff": "Barbarian Staff",
+    "item.skillset-centimental.torrential_staff": "Torrential Staff",
+    "item.skillset-centimental.fieldmaster_staff": "Fieldmaster Staff",
+    "item.skillset-centimental.burrower_staff": "Burrower Staff",
+
+    "item.skillset-centimental.health_scroll": "Health Scroll",
+    "item.skillset-centimental.power_scroll": "Power Scroll",
+    "item.skillset-centimental.defence_scroll": "Defence Scroll",
+    "item.skillset-centimental.enlargement_scroll": "Enlargement Scroll",
+    "item.skillset-centimental.miniaturise_scroll": "Miniaturise Scroll",
+
+    "block.skillset-centimental.chorus_ore": "Chorus Ore",
+    "block.skillset-centimental.mod_barrier_block": "Barrier Block",
+
     "item.skillset-centimental.chorus_helmet": "Chorus Helmet",
     "item.skillset-centimental.chorus_chestplate": "Chorus Chestplate",
     "item.skillset-centimental.chorus_leggings": "Chorus Leggings",
-    "item.skillset-centimental.chorus_boots": "Chorus Boots"
+    "item.skillset-centimental.chorus_boots": "Chorus Boots",
+
+    "item.skillset-centimental.chorus_lump": "Chorus Lump",
+    "item.skillset-centimental.infused_chorus_fruit": "Infused Chorus Fruit",
+    "item.skillset-centimental.chorus_ingot": "Chorus Ingot",
+
+    "itemgroup.mod": "Mod Items",
+
+    "item.skillset-centimental.mjolnir.tooltip_1": "The hammer of the gods, capable of summoning explosions and lightning",
+    "item.skillset-centimental.mjolnir.tooltip_2": "§o§4Mythical§r",
+    "item.skillset-centimental.chorus_of_the_void.tooltip_1": "The sword born from the void, capable of unleashing black holes and creating portals",
+    "item.skillset-centimental.chorus_of_the_void.tooltip_2": "§o§4Mythical§r",
+    "item.skillset-centimental.thanotasian_scythe.tooltip_1": "A scythe infused with the power of blood, capable of stealing opponents blood.",
+    "item.skillset-centimental.thanotasian_scythe.tooltip_2": "§o§6Legendary§r",
+    "item.skillset-centimental.blade_of_dimensions.tooltip_1": "The blade originally used to create dimensions, capable of complete control over space",
+    "item.skillset-centimental.blade_of_dimensions.tooltip_2": "§o§6Legendary§r",
+    "item.skillset-centimental.prison_of_souls.tooltip_1": "A weapon capable of using the soul fallen opponents to improve its power",
+    "item.skillset-centimental.prison_of_souls.tooltip_2": "§o§5Epic§r",
+    "item.skillset-centimental.dragonbone_blade.tooltip_1": "The sword forged from the bones of fallen dragons, capable of unleashing powerful smash attacks",
+    "item.skillset-centimental.dragonbone_blade.tooltip_2": "§o§4Mythical§r"
 }

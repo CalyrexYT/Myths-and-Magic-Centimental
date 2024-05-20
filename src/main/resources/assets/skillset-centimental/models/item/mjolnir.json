@@ -1,6 +1,85 @@
 {
-    "parent": "minecraft:item/handheld",
-    "textures": {
-        "layer0": "skillset-centimental:item/mjolnir"
-    }
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "skillset-centimental:item/mjolnir"
+	},
+	"elements": [
+		{
+			"name": "handle",
+			"from": [7, 5, 7],
+			"to": [9, 20, 9],
+			"faces": {
+				"north": {"uv": [5, 2.5, 6, 10], "texture": "#1"},
+				"east": {"uv": [6, 2.5, 7, 10], "texture": "#1"},
+				"south": {"uv": [7, 2.5, 8, 10], "texture": "#1"},
+				"west": {"uv": [0, 7.5, 1, 15], "texture": "#1"},
+				"up": {"uv": [9, 7.5, 8, 6.5], "texture": "#1"},
+				"down": {"uv": [9, 7.5, 8, 8.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Smacker",
+			"from": [3, 14, 5.5],
+			"to": [13, 19, 10.5],
+			"faces": {
+				"north": {"uv": [0, 0, 5, 2.5], "texture": "#1"},
+				"east": {"uv": [1, 7.5, 3.5, 10], "texture": "#1"},
+				"south": {"uv": [0, 2.5, 5, 5], "texture": "#1"},
+				"west": {"uv": [8, 2.5, 10.5, 5], "texture": "#1"},
+				"up": {"uv": [5, 7.5, 0, 5], "texture": "#1"},
+				"down": {"uv": [10, 0, 5, 2.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "rope",
+			"from": [6.5, 2, 8],
+			"to": [9.5, 5, 8],
+			"faces": {
+				"north": {"uv": [3.5, 7.5, 5, 9], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 1.5], "texture": "#1"},
+				"south": {"uv": [8, 5, 9.5, 6.5], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 1.5], "texture": "#1"},
+				"up": {"uv": [1.5, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [1.5, 0, 0, 0], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, -2.25, 2.25],
+			"scale": [1, 1, 0.99]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 0, 1.5],
+			"scale": [1, 1, 0.99]
+		},
+		"firstperson_righthand": {
+			"rotation": [73, 90, -78],
+			"translation": [-1, 2, 3.5],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"firstperson_lefthand": {
+			"rotation": [73, 90, -78],
+			"translation": [-1, 2, 3.5],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"ground": {
+			"rotation": [0, 0, 180],
+			"translation": [0, 6.25, 0]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [-2.75, -3, 0]
+		},
+		"head": {
+			"rotation": [0, 0, -156],
+			"translation": [-6, 14.5, 0]
+		},
+		"fixed": {
+			"translation": [0, -3.25, -1.5]
+		}
+	}
 }
