@@ -26,7 +26,7 @@ public class MjolnirEntity extends TridentEntity {
 
     public MjolnirEntity(World world, LivingEntity owner, ItemStack stack) {
         super(world, owner, stack);
-        this.dataTracker.set(TridentEntityAccessor.getLoyalty(), (byte)3);
+        this.dataTracker.set(TridentEntityAccessor.getLoyalty(), (byte)1);
     }
 
     @Override

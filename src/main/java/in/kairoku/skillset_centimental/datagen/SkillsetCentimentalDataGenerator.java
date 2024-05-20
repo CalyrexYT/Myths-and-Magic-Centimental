@@ -14,11 +14,14 @@ public class SkillsetCentimentalDataGenerator implements DataGeneratorEntrypoint
 		final FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModAdvancementsProvider::new);
 	}
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
-		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, (context) -> {
+			ModConfiguredFeatures.bootstrap(context);
+		});
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

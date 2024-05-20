@@ -1,6 +1,8 @@
 package in.kairoku.skillset_centimental.item;
 
 import com.google.common.collect.ImmutableMap;
+
+import in.kairoku.skillset_centimental.SkillsetCentimental;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -8,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
 
 import java.util.Map;
@@ -15,10 +18,10 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.CHORUS, new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 400, 5,
+                    .put(SkillsetCentimental.CHORUS, new StatusEffectInstance(StatusEffects.HEALTH_BOOST, Integer.MAX_VALUE, 5,
                             false, false, true)).build();
 
-    public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
+    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
 
@@ -74,7 +77,7 @@ public class ModArmorItem extends ArmorItem {
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
-                leggings.getMaterial() == material && boots.getMaterial() == material;
+        return helmet.getMaterial().value() == material && breastplate.getMaterial().value() == material &&
+                leggings.getMaterial().value() == material && boots.getMaterial().value() == material;
     }
 }

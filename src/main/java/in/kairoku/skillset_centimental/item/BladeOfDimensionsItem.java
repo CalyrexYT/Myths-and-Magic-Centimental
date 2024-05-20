@@ -1,7 +1,7 @@
 package in.kairoku.skillset_centimental.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.server.command.CommandManager;
@@ -9,7 +9,7 @@ import net.minecraft.util.math.random.Random;
 
 public class BladeOfDimensionsItem extends SwordItem {
     public BladeOfDimensionsItem() {
-        super(CustomToolMaterial.INSTANCE,  7, -2.2f, new FabricItemSettings().maxCount(1));
+        super(CustomToolMaterial.INSTANCE, new Item.Settings().maxCount(1).attributeModifiers(SwordItem.createAttributeModifiers(CustomToolMaterial.INSTANCE, 7, -2.2f)));
     }
 
     @Override

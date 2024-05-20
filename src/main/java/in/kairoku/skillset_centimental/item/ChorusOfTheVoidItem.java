@@ -2,9 +2,9 @@ package in.kairoku.skillset_centimental.item;
 
 import in.kairoku.skillset_centimental.SkillsetCentimental;
 import in.kairoku.skillset_centimental.entity.BlackHoleEntity;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.math.random.Random;
@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 public class ChorusOfTheVoidItem extends SwordItem {
 
     public ChorusOfTheVoidItem() {
-        super(CustomToolMaterial.INSTANCE, 9, -2.0f, new FabricItemSettings().maxCount(1));
+        super(CustomToolMaterial.INSTANCE, new Item.Settings().maxCount(1).attributeModifiers(createAttributeModifiers(CustomToolMaterial.INSTANCE, 9, -2.0f)));
     }
 
     @Override

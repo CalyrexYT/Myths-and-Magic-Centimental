@@ -20,11 +20,11 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, CHORUS_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CHORUS_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(1,// Veins Per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(100))));
+                ModOrePlacement.modifiersWithCount(3,// Veins Per Chunk
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(100))));
     }
     public static RegistryKey<PlacedFeature> registerKey(String name){
-        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(SkillsetCentimental.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(SkillsetCentimental.MOD_ID,   name));
     }
     private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> configuration,
                                  List<PlacementModifier> modifiers) {

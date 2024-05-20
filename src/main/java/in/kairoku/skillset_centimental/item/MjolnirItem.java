@@ -1,15 +1,16 @@
 package in.kairoku.skillset_centimental.item;
 
 import in.kairoku.skillset_centimental.entity.MjolnirEntity;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.UnbreakableComponent;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MovementType;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -24,7 +25,7 @@ import net.minecraft.world.World;
 public class MjolnirItem extends AxeItem {
 
     public MjolnirItem() {
-        super(CustomToolMaterial.INSTANCE, 10.0f, -3.0f, new FabricItemSettings().maxCount(1).fireproof().recipeRemainder(ModItems.MJOLNIR));
+        super(CustomToolMaterial.INSTANCE, new Item.Settings().maxCount(1).fireproof().recipeRemainder(ModItems.MJOLNIR).attributeModifiers(createAttributeModifiers(CustomToolMaterial.INSTANCE, 10, -3)).component(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(true)));
     }
 
     @Override
@@ -36,15 +37,6 @@ public class MjolnirItem extends AxeItem {
     @Override
     public boolean hasRecipeRemainder() {
         return true;
-    }
-    
-    @Override
-    public boolean isDamageable() {
-        return false;
-    }
-    @Override
-    public boolean damage(DamageSource source) {
-        return false;
     }
 
     @Override
@@ -73,8 +65,10 @@ public class MjolnirItem extends AxeItem {
         }
         boolean riptide = playerEntity.isSneaking();
         if (!world.isClient) {
-            stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(user.getActiveHand()));
-            
+            EquipmentSlot slot = LivingEntity.getSlotForHand(user.getActiveHand());
+
+            stack.damage(1, playerEntity, slot);
+
             if(!riptide) {
                 
                 MjolnirEntity mjolnir = new MjolnirEntity(world, playerEntity, stack);
@@ -91,7 +85,7 @@ public class MjolnirItem extends AxeItem {
         }
         playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         if (riptide) {
-            int j = 5;
+            int j = 5;//riptide level
             float f = playerEntity.getYaw();
             float g = playerEntity.getPitch();
             float h = -MathHelper.sin(f * ((float)Math.PI / 180)) * MathHelper.cos(g * ((float)Math.PI / 180));
@@ -101,10 +95,9 @@ public class MjolnirItem extends AxeItem {
             float n = 3.0f * ((1.0f + (float)j) / 4.0f);
             playerEntity.addVelocity(h *= n / m, k *= n / m, l *= n / m);
             playerEntity.useRiptide(20);
-            if (playerEntity.isOnGround()) {
-                float o = 1.1999999f;
-                playerEntity.move(MovementType.SELF, new Vec3d(0.0, 1.1999999284744263, 0.0));
-            }
+            
+            if (playerEntity.isOnGround()) playerEntity.move(MovementType.SELF, new Vec3d(0.0, 1.1999999284744263, 0.0));
+            
             SoundEvent soundEvent = j >= 3 ? SoundEvents.ITEM_TRIDENT_RIPTIDE_3 : (j == 2 ? SoundEvents.ITEM_TRIDENT_RIPTIDE_2 : SoundEvents.ITEM_TRIDENT_RIPTIDE_1);
             world.playSoundFromEntity(null, playerEntity, soundEvent, SoundCategory.PLAYERS, 1.0f, 1.0f);
         }

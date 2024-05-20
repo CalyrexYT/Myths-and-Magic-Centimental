@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.util.math.Vec3d;
 import org.jetbrains.annotations.Nullable;
 
@@ -13,6 +12,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.DataTracker.Builder;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -110,10 +110,10 @@ public class BlackHoleEntity extends Entity {
     }
 
     @Override
-    protected void initDataTracker() {
-        this.dataTracker.startTracking(OWNER_UUID, Optional.empty());
+    protected void initDataTracker(Builder builder) {
+        builder.add(OWNER_UUID, Optional.empty());
     }
-
+    
     @Override
     protected void readCustomDataFromNbt(NbtCompound nbt) {
         UUID uUID;
@@ -153,5 +153,7 @@ public class BlackHoleEntity extends Entity {
     public EntityType<?> getType() {
         return SkillsetCentimental.BLACK_HOLE;
     }
+
+    
     
 }
